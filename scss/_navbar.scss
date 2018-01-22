@@ -1,0 +1,61 @@
+#mainNav {
+  background-color: $nav-bg;
+  @include heading-font;
+  padding: 10px 0 !important;
+
+  .navbar-brand {
+    color: $nav-color-highlight;
+  }
+  .navbar-nav {
+    .nav-item {
+
+        cursor: pointer;
+      .nav-link {
+        color: fade-out($white, 0.3);
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.5s linear, color 0.5s linear;
+        font-weight: normal;
+
+        &:hover {
+          color: #fff;
+          border-color: #fff;
+        }
+      }
+      &.active,
+      &.active:hover {
+        .nav-link {
+          color: $white;
+          border-color: $nav-color-active;
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          font-size: 0.9rem;
+          &:hover {
+            color: fade-out($white, 0.6);
+          }
+        }
+        &.active {
+          .nav-link:hover {
+            border-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.instagram-icon {
+  width: 25px;
+  height: 25px;
+  background-image: url('/img/instagram-icon.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: cover;
+  vertical-align: middle;
+  margin-right: 10px;
+}
