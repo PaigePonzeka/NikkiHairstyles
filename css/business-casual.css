@@ -40,7 +40,7 @@ p {
   font-weight: 100;
   line-height: 4rem;
   text-transform: uppercase;
-  color: #223843;
+  color: #141315;
 }
 
 .page-section {
@@ -69,7 +69,7 @@ p {
 }
 
 #mainNav {
-  background-color: #223843;
+  background-color: #141315;
   font-family: 'Raleway';
   padding: 10px 0 !important;
 }
@@ -146,7 +146,7 @@ p {
 }
 
 .btn-secondary {
-  background: #223843;
+  background: #141315;
   border: none;
 }
 
@@ -279,7 +279,7 @@ p {
 }
 
 .footer {
-  background-color: #223843;
+  background-color: #141315;
   padding: 15px 0;
 }
 
