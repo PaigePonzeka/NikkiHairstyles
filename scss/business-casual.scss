@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import 'vendor/ekko-lightbox';
 @import "global";
 @import "navbar";
 @import "buttons";
@@ -8,6 +9,6 @@
 @import "about";
 @import "products";
 @import "contact";
-@import "store";
+@import "gallery";
 @import "footer";
 @import "bootstrap-overrides";

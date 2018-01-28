@@ -3,6 +3,7 @@
 // Restated Bootstrap Variables
 $dark-red: #980035;
 $dark-gray: #141315;
+$basically-black: #0D110E;
 $pink: #FF5E5B;
 $light-gray: #d8d8d8;
 $white: #fff !default;
@@ -17,15 +18,19 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
-$primary: $dark-red !default;
+$primary: $basically-black !default;
 $secondary: $dark-gray !default;
 
 $nav-bg: $dark-gray;
 $nav-color-active: $primary;
-$nav-color-highlight: $pink;
+$nav-color-highlight: $light-gray;
 $body-bg: $light-gray;
+
+$modal-bg: $dark-gray;
+$modal-nav: $light-gray;
 
 $fade-bg: $light-gray;
 $footer-bg: $dark-gray;
 
 $btn-secondary-bg: $dark-gray;
+

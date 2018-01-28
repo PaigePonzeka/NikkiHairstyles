@@ -1,0 +1,15 @@
+.gallery {
+  .row {
+    margin: 10px 0;
+  }
+}
+
+.modal-content {
+  background: $modal-bg;
+}
+
+.ekko-lightbox-nav-overlay a {
+  color: $modal-nav;
+  background: none;
+
+}
