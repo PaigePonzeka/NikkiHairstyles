@@ -39,10 +39,11 @@
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  opacity: 0;
+  opacity: 0.25;
   transition: opacity .5s;
   color: #fff;
   font-size: 30px;
+  text-shadow: 2px 2px 4px #000000;
   z-index: 1; }
 
 .ekko-lightbox-nav-overlay a > * {
