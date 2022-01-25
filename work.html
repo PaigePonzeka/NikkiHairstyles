@@ -62,6 +62,12 @@
                 <span class="sr-only">(current)</span>
               </a>
             </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-lowercase text-expanded" href="location.html">
+                Studio
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
             <li>
               <a class="nav-link" href="https://www.instagram.com/ink.and.ivy__/" target="_blank">
                 <span class="instagram-icon"></span>follow me on instagram!</a>
@@ -72,14 +78,22 @@
     </nav>
 
     <section class="page-section about-heading mt-5">
-        <div class="row justify-content-center mb-5">
+        <div class="container mb-5">
+        <div class="row justify-content-center">
           <div class="col-3 col-lg-2">
             <img src="img/the-knot-badge.jpg" style="width: 100px; height: 100px; margin: 0 auto; display: inline-block;"/>
             </div>
             <div class="col-3 col-lg-2">
               <img src="img/knot_best_2020_badge.png" style="width: 100px; height: 100px; margin: 0 auto; display: inline-block;"/>
             </div>
+            <div class="col-3 col-lg-2">
+              <a href="https://www.theknot.com/marketplace/ink-and-ivy-lake-grove-ny-2036280"><img src="img/knot_best_badge_2022.png" style="width: 100px; height: 100px; margin: 0 auto; display: inline-block;"/></a>
+            </div>
+            <div class="col-3 col-lg-2">
+              <img src="images/featured_in_manhattan_bride.png" style="width: 100px; height: 100px; margin: 0 auto; display: inline-block;"/>
+            </div>
         </div>
+      </div>
       <div class="work-container">
 
         <div class="row justify-content-center gallery">
@@ -120,6 +134,28 @@
     <script src="javascript/scripts.js"></script>
     <script>
         let items = [
+            "./img/2022/gallery_1.jpg",
+            "./img/2022/gallery_2.jpg",
+            "./img/2022/gallery_3.jpg",
+            "./img/2022/gallery_4.jpg",
+            "./img/2022/gallery_5.jpg",
+            "./img/2022/gallery_6.jpg",
+            "./img/2022/gallery_7.jpg",
+            "./img/2022/gallery_8.jpg",
+            "./img/2022/gallery_9.jpg",
+            "./img/2022/gallery_10.jpg",
+            "./img/2022/gallery_11.jpg",
+            "./img/2022/gallery_12.jpg",
+            "./img/2022/gallery_13.jpg",
+            "./img/2022/gallery_14.jpg",
+            "./img/2022/gallery_15.jpg",
+            "./img/2022/gallery_16.jpg",
+            "./img/2022/gallery_17.jpg",
+            "./img/2022/gallery_18.jpg",
+            "./img/2022/gallery_19.jpg",
+            "./img/2022/gallery_20.jpg",
+            "./img/2022/gallery_21.jpg",
+            "./img/2022/gallery_22.jpg",
             "img/gallery/picture_2021_48.jpg",
             "img/gallery/picture_2021_49.jpg",
             "img/gallery/picture_2021_1.jpg",
@@ -276,7 +312,7 @@
         $(document).ready(function(){
             var imageContainer = $('.gallery-items-row');
             $.each(items,function(index, item){
-                console.log(item);
+
                 var image = $("<a/>", {
                     'data-toggle': 'lightbox',
                     'data-gallery': 'example-gallery' ,
