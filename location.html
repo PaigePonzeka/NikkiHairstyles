@@ -23,7 +23,18 @@
    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/business-casual.min.css" rel="stylesheet">
-
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+    <style>
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    .map-container {
+      position:  relative;
+      width:  100%;
+      height:  500px;
+    }
+    </style>
   </head>
 
   <body>
@@ -31,6 +42,8 @@
     <h1 class="site-heading text-center text-white d-none d-lg-block">
       <img class="main-logo" src="./img/main-logo.jpg" alt="Ink & Ivy"/>
     </h1>
+
+
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
@@ -73,11 +86,7 @@
       </div>
     </nav>
 
-    <section class="page-section about-heading">
-      <div class="container" style="text-align: center">
-        <div class="py-5"></div>
-
-        <div class="about-heading-content">
+    <div class="about-heading-content pt-3 pb-3">
           <div class="row" style="text-align: left">
             <div class="col-xl-9 col-lg-10 mx-auto">
               <div class="bg-faded rounded p-5">
@@ -86,19 +95,76 @@
                   <span class="section-heading-lower"> Bridal Hair Studio</span>
                   <span class="section-heading-upper">By Appointment Only.</span>
                 </h2>
-                <p>
-                   I am offering the following services on location in Port Jefferson Station, NY; Haircuts, blowouts, bridal trials, photoshoot hair styles, engagement shoot styling, bridal/ baby shower hairstyling, boudior shoot hair styling. All by appointment only.
-
-               </p>
-               <a class="btn btn-primary btn-l mb-3" href="contact.html">Book your appointment today!</a>
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.000565704729!2d-73.05755108458877!3d40.915733479310234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e840e833ca4fb7%3A0x8f14fdc538ce7d73!2s4699-1%20Nesconset%20Hwy%2C%20Port%20Jefferson%20Station%2C%20NY%2011776!5e0!3m2!1sen!2sus!4v1643074389991!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
+               <a class="btn btn-primary btn-l" href="contact.html">Book your appointment today!</a>
               </div>
             </div>
           </div>
         </div>
+
+      <div class="js-popup-contents" style="display:none">
+        <div class="container">
+            <div class="row">
+
+              <p><strong>Bridal Hair Studio</strong> <br/>
+              Port Jefferson Station, NY</p>
+
+              <a class="btn btn-outline-primary btn-sm" href="https://www.google.com/maps/place/4699-1+Nesconset+Hwy,+Port+Jefferson+Station,+NY+11776/@40.915733,-73.055362,16z/data=!4m5!3m4!1s0x89e840e833ca4fb7:0x8f14fdc538ce7d73!8m2!3d40.9157335!4d-73.0553624?hl=en" target="_blank">Get Directions</a>
+              <a class="ml-3 btn btn-primary btn-sm" href="contact.html">Book</a>
+            </div>
+        </div>
+
       </div>
-    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img
+            src="./images/studio/with-client.jpg"
+            data-mdb-img="./images/studio/with-client.jpg"
+            alt="Nikki waiting for clients"
+            class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+          />
+         <img
+            src="./images/studio/bride-closet.jpg"
+            data-mdb-img="./images/studio/bride-closet.jpg"
+            alt="The  Entrance to Ink & Ivy's studio"
+            class="w-100 shadow-1-strong rounded"
+          />
+        </div>
+        <div class="col-lg-6">
+          <img
+            src="./images/studio/entrance.jpg"
+            data-mdb-img="./images/studio/entrance.jpg"
+            alt="The  Entrance to Ink & Ivy's studio"
+            class="w-100 shadow-1-strong rounded"
+          />
+          <img
+            src="./images/studio/together-wonderful.jpg"
+            data-mdb-img="./images/studio/together-wonderful.jpg"
+            alt="The  Entrance to Ink & Ivy's studio"
+            class="w-100 shadow-1-strong rounded mt-2"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 my-4">
+          <div class="map-container">
+                <div id="map"></div>
+              </div>
+        </div>
+        <div class="col-lg-6 my-4 d-flex align-items-center">
+          <div>
+              <h2 class="section-heading mb-0">
+                <span class="section-heading-upper">By Appointment Only.</span>
+                  <span class="section-heading-lower">Port Jefferson Station, NY.</span>
+              </h2>
+            <p class="mb-0">I am offering the following services on location in Port Jefferson Station, NY; Haircuts, blowouts, bridal trials, photoshoot hair styles, engagement shoot styling, bridal/ baby shower hairstyling, boudior shoot hair styling. All by appointment only.</p>
+               <a class="btn btn-primary btn-l mt-2" href="contact.html">Book your appointment today!</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer text-faded text-center">
       <div class="container">
@@ -110,6 +176,22 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoicGFpZ2Vwb24iLCJhIjoiY2wzd2RtZm5yMDE4azNjcDk1enhkaWR4YyJ9.9QlN-C5zO3k1JBYrfBsOEw';
+        const map = new mapboxgl.Map({
+          container: 'map', // container ID
+          style: 'mapbox://styles/mapbox/dark-v10', // style URL
+          center: [-73.055362,40.915733], // starting position [lng, lat]
+          zoom: 10 // starting zoom
+        });
+
+        new mapboxgl.Marker().setLngLat([-73.055362,40.915733]).addTo(map);
+
+        const popup = new mapboxgl.Popup()
+          .setLngLat([-73.055362,40.915733])
+          .setHTML($('.js-popup-contents').html())
+          .addTo(map);
+    </script>
 
   </body>
 
